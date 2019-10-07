@@ -1,22 +1,70 @@
-.App {
-  text-align: center;
+.Main{
+    font-style: italic;
+    text-align: center;
+    font-size: 30px;
 }
-
-.App-logo {
-  height: 40vmin;
+.inputTodo{
+    width: 50%;
+    height:30px;
+    font-size: 30px;
+    vertical-align:middle;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.todoList{
+    height: 50px;
+    border: 5px solid olivedrab;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 35px;
+    float: left; 
+    width: 100%;
+    position: static;
 }
-
-.App-link {
-  color: #09d3ac;
+.side{
+    float: right;
+    padding-right: 20px;
 }
+#route{
+    width : 100px;
+    border-radius: 10px;
+    border: 5px solid green;
+    float: right; 
+    width: 10%;
+    background-color: greenyellow;
+    position: fixed;
+}
+.addTodoButton{
+    background:#1AAB8A;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:35px;
+    font-size:1.5em;
+    padding:0 1em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+  }
+  .addTodoButton:hover{
+    background:#fff;
+    color:#1AAB8A;
+  }
+  .addTodoButton:before,.addTodoButton:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #1AAB8A;
+    transition:400ms ease all;
+  }
+  .addTodoButton:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .addTodoButton:hover:before,.addTodoButton:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
